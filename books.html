@@ -1,0 +1,14 @@
+<!doctype html><html lang="vi"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Quản lý danh sách sách cá nhân"><title>Bookshelf | Quản lý sách</title><link rel="stylesheet" href="common.css"></head><body><a class="skip-link" href="#main-content">Skip to Main Content</a>
+<header class="site-header"><div class="header-inner">
+<a class="brand" href="index.html"><img src="covers/logo.svg" alt="Biểu tượng Bookshelf">Bookshelf</a>
+<nav aria-label="Điều hướng chính"><ul><li><a href="index.html">Trang chủ</a></li><li><a href="books.html" aria-current="page">Quản lý sách</a></li><li><a href="contact.html">Liên hệ</a></li></ul></nav></div></header>
+<main id="main-content" class="container"><section class="page-intro"><p class="eyebrow">Thư viện cá nhân</p><h1>Quản lý sách</h1><p>Thêm đầu sách, tìm kiếm theo tên hoặc tác giả và cập nhật tình trạng đọc. Dữ liệu được lưu trên trình duyệt của bạn.</p></section>
+<section class="panel"><h2>Thêm sách mới</h2><form id="book-form" class="form-grid">
+<div class="field"><label for="title">Tên sách</label><input id="title" name="title" required maxlength="100" placeholder="Ví dụ: Nhà giả kim"></div>
+<div class="field"><label for="author">Tác giả</label><input id="author" name="author" required maxlength="80" placeholder="Tên tác giả"></div>
+<div class="field"><label for="category">Thể loại</label><select id="category" name="category"><option>Văn học</option><option>Công nghệ</option><option>Kỹ năng</option><option>Khoa học</option><option>Khác</option></select></div>
+<div class="field"><label for="status">Trạng thái</label><select id="status" name="status"><option>Muốn đọc</option><option>Đang đọc</option><option>Đã đọc</option></select></div>
+<div class="wide"><button type="submit">+ Thêm vào thư viện</button><p id="form-message" class="notice" role="status" aria-live="polite"></p></div></form></section>
+<section class="section"><div class="section-heading"><div><p class="eyebrow">Danh sách của bạn</p><h2>Sách trong thư viện</h2></div></div>
+<div class="toolbar"><div class="field"><label for="search">Tìm sách</label><input id="search" type="search" placeholder="Nhập tên sách hoặc tác giả..."></div><div class="field"><label for="filter">Lọc trạng thái</label><select id="filter"><option value="Tất cả">Tất cả trạng thái</option><option>Muốn đọc</option><option>Đang đọc</option><option>Đã đọc</option></select></div></div>
+<div id="book-list" class="book-list" aria-live="polite"></div></section></main><footer class="site-footer"><div class="container footer-inner"><span>© 2026 Bookshelf – Góc đọc sách của bạn.</span><a href="#main-content">Về đầu trang ↑</a></div></footer><script src="books.js"></script></body></html>
